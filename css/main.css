@@ -42,19 +42,20 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 22px;
 }
 @media (min-width: 768px) {
   .header {
     min-height: 560px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 58px;
+    padding-bottom: 45px;
   }
 }
 @media (min-width: 1200px) {
   .header {
     min-height: 800px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 55px;
+    padding-bottom: 40px;
   }
 }
 .header__avatar {
@@ -74,18 +75,19 @@
 }
 @media (min-width: 768px) {
   .header__avatar {
-    margin-top: 74px;
-    margin-bottom: 40px;
+    margin-top: 61px;
+    margin-bottom: 48px;
   }
 }
 @media (min-width: 1200px) {
   .header__avatar {
-    margin-top: 114px;
+    margin-top: 105px;
+    margin-bottom: 38px;
   }
 }
 .header__heading {
   text-align: center;
-  margin-bottom: 61px;
+  margin-bottom: 84px;
 }
 @media (min-width: 768px) {
   .header__heading {
@@ -96,7 +98,7 @@
 @media (min-width: 1200px) {
   .header__heading {
     height: 102px;
-    margin-bottom: 226px;
+    margin-bottom: 240px;
   }
 }
 .header__title {
@@ -122,6 +124,7 @@
     font-size: 56px;
     line-height: 40px;
     letter-spacing: 3px;
+    margin-bottom: 30px;
   }
 }
 .header__subtitle {
@@ -146,19 +149,13 @@
 .header__hoverButton {
   width: 30px;
   height: 24px;
-  margin-bottom: 27px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
   .header__hoverButton {
-    margin-bottom: 44px;
     height: 79px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__hoverButton {
-    margin-bottom: 41px;
   }
 }
 .navigation {
@@ -183,7 +180,16 @@
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 100px;
+}
+@media (min-width: 768px) {
+  .navigation ul li {
+    margin-right: 58px;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation ul li {
+    margin-right: 110px;
+  }
 }
 .navigation ul li:last-child {
   margin-right: 0px;
@@ -191,13 +197,18 @@
 .navigation a {
   color: #fff;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navigation a {
     font-size: 22px;
+    letter-spacing: 2px;
   }
 }
 .navigation a:hover,
