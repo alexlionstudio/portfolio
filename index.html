@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="header">
+	<header id="top" class="header">
 		<div class="container">
 			<!-- Главная навигация на обложке -->
 			<nav class="navigation"> 
@@ -30,9 +30,9 @@
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</div>
 				<ul class="navigation__list">
-					<li><a href="#">Резюме</a></li>
-					<li><a href="#">Портфолио</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 			<!-- Аватар на обложке -->
@@ -60,7 +60,7 @@
 	</header>
 	<main>
 		<!-- Блок Резюме start -->  
-		<div class="resume">
+		<div id="resume" class="resume">
 			<div class="container">
 				<div class="row">
 					<!-- Аватар резюме -->
@@ -119,7 +119,7 @@
 		</div>
 		<!-- Блок Резюме end -->
 		<!-- Блок Портфолио (мои работы) start -->  
-		<div class="portfolio">
+		<div id="portfolio" class="portfolio">
 			<div class="container">
 				<!-- Заголовок start -->
 				<div class="portfolio__title block--orange">Мои работы</div>
@@ -201,7 +201,7 @@
 		</div>
 		<!-- Блок Портфолио (мои работы) end -->
 		<!-- Блок контакты и форма start -->   
-		<div class="contacts">
+		<div id="contacts" class="contacts">
 			<div class="container">
 				<div class="row">
 					<!-- Блок контакты start -->  
@@ -286,7 +286,11 @@
 	<!--  JQuery -->
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 
-	<!--  User Js -->
+	<!--  Pagescroll2id -->
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+
+	<!--  User custom JS scripts -->
+	<script src="js/navigation.js"></script>
 	<script src="js/main.js"></script>
 </body> 
 </html>
