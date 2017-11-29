@@ -1,0 +1,44 @@
+.navigation{
+	display: none;
+	height: 31px;
+	font-size: 22px;
+	line-height: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	ul{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li{
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			margin-right: 100px;
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+	a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 22px;
+		line-height: 1;
+		text-transform: uppercase;
+		@media (min-width: 768px){
+			font-size: 22px;
+		}
+		&:hover, &:focus, &:active{
+			.yellow;
+		} 
+	}
+	@media (min-width: 768px){
+		position: relative;
+		display: block;
+	} 
+}

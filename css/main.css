@@ -1,3 +1,28 @@
+@import url("../fonts/noto-webfont/noto.css");
+@import url("../fonts/font-awesome/css/font-awesome.css");
+.noto-sans-normal {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-sans-bold {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+.noto-sans-normal-italic {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: italic;
+}
+.noto-sans-bold-italic {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: bold-italic;
+}
+.yellow {
+  color: #FFE400;
+}
 .button a {
   display: inline-block;
   height: 48px;
@@ -9,32 +34,48 @@
 .button--download a {
   color: #fff;
 }
-.header__navigation {
-  display: none;
-  height: 31px;
+.header {
+  position: relative;
+  min-height: 390px;
+  background-color: #1D6DAC;
+  background-image: url("../img/background/bg-10.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media (min-width: 768px) {
-  .header__navigation {
-    margin-top: 45px;
-    display: block;
+  .header {
+    min-height: 560px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    min-height: 800px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .header__avatar {
+  overflow: hidden;
   margin-top: 50px;
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
   height: 110px;
   width: 110px;
-}
-.header__avatar-img {
-  width: 100%;
-  border-radius: 50%;
+  border-radius: 55px;
+  background-image: url("../img/ui-kit-assets/user-avatar-placeholder-big.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 40px #48779f;
 }
 @media (min-width: 768px) {
   .header__avatar {
     margin-top: 74px;
-    margin-bottom: 51px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -43,7 +84,6 @@
   }
 }
 .header__heading {
-  height: 82px;
   text-align: center;
   margin-bottom: 61px;
 }
@@ -57,6 +97,50 @@
   .header__heading {
     height: 102px;
     margin-bottom: 226px;
+  }
+}
+.header__title {
+  color: #fff;
+  margin: 0 0 25px;
+  font-size: 26px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 40px #48779f;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 42px;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    font-size: 56px;
+    line-height: 40px;
+    letter-spacing: 3px;
+  }
+}
+.header__subtitle {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  text-shadow: 0px 0px 40px #48779f;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+@media (min-width: 768px) {
+  .header__subtitle {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .header__subtitle {
+    font-size: 26px;
   }
 }
 .header__hoverButton {
@@ -75,6 +159,56 @@
 @media (min-width: 1200px) {
   .header__hoverButton {
     margin-bottom: 41px;
+  }
+}
+.navigation {
+  display: none;
+  height: 31px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.navigation ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 100px;
+}
+.navigation ul li:last-child {
+  margin-right: 0px;
+}
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .navigation a {
+    font-size: 22px;
+  }
+}
+.navigation a:hover,
+.navigation a:focus,
+.navigation a:active {
+  color: #FFE400;
+}
+@media (min-width: 768px) {
+  .navigation {
+    position: relative;
+    display: block;
   }
 }
 .resume {
@@ -442,7 +576,7 @@
 }
 .footer__text a:hover,
 .footer__text a:active {
-  color: #FFE300;
+  color: #FFE400;
 }
 .block {
   background: #9AB3C6;

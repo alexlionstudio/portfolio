@@ -1,34 +1,45 @@
 .header{
-}
-.header__navigation{
-	display: none;
-	height: 31px;
+	position: relative;
+	min-height: 390px;
+	background-color: #1D6DAC;
+	background-image: url("../img/background/bg-10.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	@media (min-width: 768px){
-		margin-top: 45px; 
-		display: block;
+		min-height: 560px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	} 
+	@media (min-width: 1200px){
+		min-height: 800px;
+		padding-top: 60px; //удалить если предыдущее значение не поменяется
+		padding-bottom: 60px; //удалить если предыдущее значение не поменяется
+	}
 }
 .header__avatar{
+	overflow: hidden;
 	margin-top: 50px;
 	margin-bottom: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 110px;
 	width: 110px;
-	&-img{
-		width: 100%;
-		border-radius: 50%;
-	}
+	border-radius: 55px;
+	background-image: url("../img/ui-kit-assets/user-avatar-placeholder-big.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0px 0px 40px rgba(72, 119, 159, 1);
 	@media (min-width: 768px){
 		margin-top: 74px;
-		margin-bottom: 51px;
+		margin-bottom: 40px;
 	}
 	@media (min-width: 1200px){
 		margin-top: 114px;
 	}
 }
 .header__heading{
-	height: 82px; // убрать нужно будет
 	text-align: center;	
 	margin-bottom: 61px;
 	@media (min-width: 768px){
@@ -40,6 +51,39 @@
 		margin-bottom: 226px;
 	}
 }
+.header__title {
+	color: #fff;
+	margin: 0 0 25px;
+	font-size: 26px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	text-shadow: 0px 0px 40px rgba(72, 119, 159, 1);
+	.noto-sans-bold;
+	@media (min-width: 768px){
+		font-size: 42px;
+		line-height: 30px;
+		letter-spacing: 2px;
+	}
+	@media (min-width: 1200px){
+		font-size: 56px;
+		line-height: 40px;
+		letter-spacing: 3px;
+	}
+}
+.header__subtitle {
+	color: #fff;
+	font-size: 18px;
+	line-height: 1;
+	text-shadow: 0px 0px 40px rgba(72, 119, 159, 1);
+	.noto-sans-bold; 
+	@media (min-width: 768px){
+		font-size: 20px;
+	}
+	@media (min-width: 768px){
+		font-size: 26px;
+	}
+}
+
 .header__hoverButton{
 	width: 30px;
 	height: 24px;
