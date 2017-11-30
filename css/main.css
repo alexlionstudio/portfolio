@@ -520,7 +520,7 @@ a.mouse_scroll:focus {
     margin-right: auto;
   }
 }
-.reume__title {
+.resume__title {
   margin: 0px;
   padding: 0px;
   margin-bottom: 22px;
@@ -532,7 +532,7 @@ a.mouse_scroll:focus {
   font-style: normal;
 }
 @media (min-width: 768px) {
-  .reume__title {
+  .resume__title {
     margin-bottom: 32px;
     font-size: 42px;
     line-height: 30px;
@@ -670,36 +670,22 @@ a.mouse_scroll:focus {
   }
 }
 .portfolio__title {
-  line-height: 32px;
-  margin-bottom: 30px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 35px;
+  color: #0052C2;
+  font-size: 32px;
+  line-height: 24px;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 768px) {
   .portfolio__title {
-    line-height: 42px;
-  }
-}
-.portfolio__filter {
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .portfolio__filter {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.portfolio__filter-toggle {
-  border: solid 2px #0051C1;
-  display: block;
-  padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .portfolio__filter-toggle {
-    display: inline-block;
-    padding: 19px 31px;
+    margin-bottom: 43px;
+    font-size: 42px;
+    line-height: 30px;
   }
 }
 .portfolio__works-block {
@@ -747,6 +733,78 @@ a.mouse_scroll:focus {
 @media (min-width: 1200px) {
   .portfolio__works-block-text {
     line-height: 19px;
+  }
+}
+.filter {
+  margin-bottom: 7px;
+}
+@media (min-width: 768px) {
+  .filter {
+    margin-bottom: 42px;
+  }
+}
+.filter__block {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0px;
+}
+.filter__element {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: block;
+  font-size: 0px;
+}
+.filter__element:last-child {
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .filter__element {
+    display: inline-block;
+    margin-right: -3px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__element {
+    margin-right: 14px;
+  }
+}
+.filter__toggle {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 9px 22px;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+.filter__toggle:hover,
+.filter__toggle:focus {
+  border: solid 2px #0051C1;
+  padding: 7px 20px;
+}
+@media (min-width: 768px) {
+  .filter__toggle {
+    display: inline-block;
+    padding: 14px 31px;
+  }
+  .filter__toggle:hover,
+  .filter__toggle:focus {
+    border: solid 2px #0051C1;
+    padding: 12px 29px;
+  }
+}
+.filter__toggle--active {
+  border: solid 2px #0051C1;
+  padding: 7px 20px;
+}
+@media (min-width: 768px) {
+  .filter__toggle--active {
+    border: solid 2px #0051C1;
+    padding: 12px 29px;
   }
 }
 .contacts {
