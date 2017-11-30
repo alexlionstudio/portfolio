@@ -23,6 +23,21 @@
 .yellow {
   color: #FFE400;
 }
+.blueHeading {
+  color: #0052C2;
+}
+.standadrt-text {
+  color: #010101;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .standadrt-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
 .button a {
   display: inline-block;
   height: 48px;
@@ -251,6 +266,9 @@ a.mouse_scroll:focus {
   background-size: cover;
   box-shadow: 0px 0px 40px #48779f;
 }
+.header__avatar-img {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .header__avatar {
     margin-top: 61px;
@@ -436,7 +454,7 @@ a.mouse_scroll:focus {
   }
 }
 .resume {
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 42px;
   border-bottom: solid 1px #E8EDF3;
 }
@@ -448,42 +466,80 @@ a.mouse_scroll:focus {
 }
 @media (min-width: 1200px) {
   .resume {
-    padding-top: 86px;
+    padding-top: 87px;
     padding-bottom: 90px;
   }
 }
 .resume__avatar {
+  overflow: hidden;
   height: 95px;
   width: 95px;
+  border-radius: 50px;
+  background-image: url("../img/ui-kit-assets/user-avatar-placeholder-big.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .resume__avatar-img {
   width: 100%;
-  border-radius: 50%;
 }
 @media (min-width: 1200px) {
   .resume__avatar {
     height: 205px;
     width: 205px;
+    border-radius: 110px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 .reume__title {
-  height: 24px;
-  margin-bottom: 28px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 22px;
+  color: #0052C2;
+  font-size: 32px;
+  line-height: 24px;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 768px) {
   .reume__title {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 30px;
   }
 }
 .resume__main-inf {
   height: 139px;
   margin-bottom: 40px;
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: normal;
+}
+.resume__main-inf-person {
+  margin-bottom: 10px;
+}
+.resume__main-inf p {
+  color: #010101;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+.resume__main-inf p strong {
+  font-size: 18px;
+  height: 28px;
+}
+@media (min-width: 768px) {
+  .resume__main-inf p {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 @media (min-width: 768px) {
   .resume__main-inf {
     margin-bottom: 40px;
+    padding-right: 40px;
   }
 }
 .resume__skills-and-education-inf {

@@ -1,5 +1,5 @@
 .resume {
-	padding-top: 41px;
+	padding-top: 40px;
 	padding-bottom: 42px;
 	border-bottom: solid 1px #E8EDF3;
 	@media (min-width: 768px){
@@ -7,20 +7,26 @@
 		padding-bottom: 60px;
 	}
 	@media (min-width: 1200px){
-		padding-top: 86px;
+		padding-top: 87px;
 		padding-bottom: 90px;
 	}
 }
 .resume__avatar{
+	overflow: hidden;
 	height: 95px;
 	width: 95px;
+	border-radius: 50px;
+	background-image: url("../img/ui-kit-assets/user-avatar-placeholder-big.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	&-img{
 		width: 100%;
-		border-radius: 50%;
 	}
 	@media (min-width: 1200px){
 		height: 205px;
 		width: 205px;
+		border-radius: 110px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -28,17 +34,36 @@
 .resume__content {
 }
 .reume__title {
-	height: 24px; // убрать нужно будет
-	margin-bottom: 28px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 22px;
+	.blueHeading;
+	font-size: 32px;
+	line-height: 24px;
+	.noto-sans-bold;
 	@media (min-width: 768px){
-		margin-bottom: 37px;
+		margin-bottom: 32px;
+		font-size: 42px;
+		line-height: 30px;
 	}
 }
 .resume__main-inf { 
 	height: 139px; // убрать нужно будет
 	margin-bottom: 40px;
+	.noto-sans-normal;
+	&-person{
+		margin-bottom: 10px;
+	}
+	& p{
+		& strong{
+			font-size: 18px;
+			height: 28px;
+		}
+		.standadrt-text;
+	}
 	@media (min-width: 768px){
 		margin-bottom: 40px;
+		padding-right: 40px;
 	}
 }
 .resume__skills-and-education-inf{
