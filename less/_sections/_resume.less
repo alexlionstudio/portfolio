@@ -10,6 +10,13 @@
 		padding-top: 87px;
 		padding-bottom: 90px;
 	}
+	@media (min-width: 1500px){
+		&--bg-laptop{
+			background-image: url('../img/background/laptop.png');
+			background-repeat: no-repeat;
+			background-position: right 70%;
+		}
+	}
 }
 .resume__avatar{
 	overflow: hidden;
@@ -47,9 +54,11 @@
 		line-height: 30px;
 	}
 }
+/* --------------------------------
+       	resume__main-inf
+----------------------------------- */
 .resume__main-inf { 
-	height: 139px; // убрать нужно будет
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 	.noto-sans-normal;
 	&-person{
 		margin-bottom: 10px;
@@ -62,44 +71,70 @@
 		.standadrt-text;
 	}
 	@media (min-width: 768px){
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		padding-right: 40px;
 	}
 }
-.resume__skills-and-education-inf{
-	margin-bottom: 20px;
-	@media (min-width: 768px){
-		margin-bottom: 40px;
-	}
-}
-.resume__slills-inf {
-	margin-bottom: 43px;
-	@media (min-width: 768px){
-		margin-bottom: 0px;
-	}
-}
-.resume__education-inf {
-	@media (min-width: 1200px){
-		padding-left: 30px;
-	}
-}
-.resume__slills-inf-title {
-	height: 25px; // убрать нужно будет
-	margin-bottom: 22px;
-	@media (min-width: 768px){
-		margin-bottom: 25px;
-	}
-}
-.resume__slills-inf-block {
-	height: 40px; // убрать нужно будет
-	margin-bottom: 22px;
-	@media (min-width: 768px){
-		margin-bottom: 25px;
-	}
-	&:last-child{
-		margin-bottom: 0px;
-	}
-}
 
-.button {
+/* --------------------------------
+       	resume__story-block
+----------------------------------- */
+//  Блок 1-го уровня -- главный
+.resume__story-block{
+	margin-bottom: 0px;
+	@media (min-width: 768px){
+		margin-bottom: 20px;
+	}
+	@media (min-width: 1200px){
+		margin-bottom: 20px;
+	}
+}
+//  Блок 2-го уровня
+.resume__story-inf{
+	margin-bottom: 21px;
+	@media (min-width: 768px){
+		margin-bottom: 25px;
+	}
+	&--offmargin{
+		margin-bottom: 0px;
+	}
+}
+.resume__story-inf-title{	
+	margin-bottom: 18px; 
+	& h3{
+		line-height: 28px;
+		font-size: 24px;
+		margin: 0px;
+		padding: 0px;
+		.noto-sans-bold;
+	}
+}
+.resume__story-inf-column {
+	margin: 0px;
+	padding: 0px;
+}
+.resume__story-inf-list {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.resume__story-inf-time{
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	.noto-sans-bold;
+	.blueHeading;
+	& p{
+		margin: 0px;
+		padding: 0px;
+	}
+}
+.resume__story-inf-description {
+	padding-bottom: 15px;
+	.noto-sans-normal;
+	.standadrt-text;
+	& p{
+		margin: 0px;
+		padding: 0px;
+	}
 }
