@@ -52,6 +52,16 @@
   text-align: center;
   border-radius: 60px;
   background: #0052C2;
+  box-shadow: 0px 3px 15px rgba(0, 81, 193, 0.5);
+}
+.button a:hover,
+.button a:focus {
+  background: #fff;
+  color: #0052C2;
+}
+.button a:active {
+  background: #0052C2;
+  color: #FFE400;
 }
 .button a .fa {
   font-size: 18px;
