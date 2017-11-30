@@ -777,6 +777,7 @@ a.mouse_scroll:focus {
   display: inline-block;
   padding: 9px 22px;
   margin-bottom: 10px;
+  cursor: pointer;
   font-family: 'Noto Sans';
   font-weight: 700;
   font-style: normal;
