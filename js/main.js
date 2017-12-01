@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$(".fancybox").fancybox({
 			// Default - with fix from scroll to top
 			protect: true,
-			infobar : false,
+			infobar : true,
 			toolbar : true,
 			buttons : [
 		        'slideShow',
