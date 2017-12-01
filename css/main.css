@@ -807,6 +807,9 @@ a.mouse_scroll:focus {
     display: inline-block;
   }
 }
+.__mPS2id:focus {
+  display: none;
+}
 .portfolio__works-block-img:hover .portfolio__works-block-img__hover {
   display: block;
   top: 0%;
