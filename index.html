@@ -167,7 +167,7 @@
 		</div>
 		<!-- Блок Резюме end -->
 		<!-- Блок Портфолио (мои работы) start -->  
-		<div id="portfolio" class="portfolio">
+		<div id="portfolio" class="portfolio portfolio--bg-gear">
 			<div class="container">
 				<!-- Заголовок start -->
 				<h2 class="portfolio__title">Мои работы</h2>
@@ -175,13 +175,13 @@
 				<!-- Кнопки фильтра start -->
 				<div class="row">
 					<div class="col-lg-offset-2 col-lg-8"> 
-						<div class="filter">
-							<ul class="filter__block">
-								<li class="filter__element"><span class="filter__toggle filter__toggle--active">Все</span></li>
-								<li class="filter__element"><span class="filter__toggle">HTML+CSS</span></li>
-								<li class="filter__element"><span class="filter__toggle">Bootstrap</span></li>
-								<li class="filter__element"><span class="filter__toggle">Учебные</span></li>
-								<li class="filter__element"><span class="filter__toggle">На заказ</span></li>
+						<div class="filter-box">
+							<ul class="filter filter-box__block">
+								<li class="filter-box__element"><span class="filter-box__toggle" data-filter="all">Все</span></li>
+								<li class="filter-box__element" ><span class="filter-box__toggle" data-filter=".html-css">HTML+CSS</span></li>
+								<li class="filter-box__element" data-filter=".bootstrap"><span class="filter-box__toggle">Bootstrap</span></li>
+								<li class="filter-box__element" data-filter=".tutorial"><span class="filter-box__toggle">Учебные</span></li>
+								<li class="filter-box__element" data-filter=".payed"><span class="filter-box__toggle">На заказ</span></li>
 							</ul>
 						</div>
 					</div>
@@ -189,9 +189,9 @@
 				<!-- Кнопки фильтра end -->
 				<!-- Блоки работ start -->
 				<div class="portfolio__works">
-					<div class="row"> 
+					<div class="row" id="porfolio-projects"> 
 						<!-- 1 works start -->
-						<div class="col-sm-4">
+						<div class="col-sm-4  mix tutorial html-css">
 							<div class="portfolio__works-block">
 								<div class="portfolio__works-block-img">
 									<a href="#" class="portfolio__works-block-img__hover" alt="here is image">
@@ -207,7 +207,7 @@
 						</div>
 						<!-- 1 works end -->
 						<!-- 2 works start -->
-						<div class="col-sm-4">
+						<div class="col-sm-4 mix tutorial bootstrap">
 							<div class="portfolio__works-block">
 								<div class="portfolio__works-block-img">
 									<a href="#" class="portfolio__works-block-img__hover" alt="here is image">
@@ -223,8 +223,8 @@
 						</div>
 						<!-- 2 works end -->
 						<!-- 3 works start -->
-						<div class="col-sm-4">
-							<div class="portfolio__works-block">
+						<div class="col-sm-4 mix tutorial bootstrap">
+							<div class="portfolio__works-block ">
 								<div class="portfolio__works-block-img">
 									<a href="#" class="portfolio__works-block-img__hover" alt="here is image">
 										<i class="fa fa-search" aria-hidden="true"></i>
@@ -239,7 +239,7 @@
 						</div>
 						<!-- 3 works end -->
 						<!-- 4 works start -->
-						<div class="col-sm-4">
+						<div class="col-sm-4 float--left  mix payed html-css">
 							<div class="portfolio__works-block">
 								<div class="portfolio__works-block-img">
 									<a href="#" class="portfolio__works-block-img__hover" alt="here is image">
@@ -255,8 +255,8 @@
 						</div>
 						<!-- 4 works end -->
 						<!-- 5 works start -->
-						<div class="col-sm-4">
-							<div class="portfolio__works-block">
+						<div class="col-sm-4 float--left">
+							<div class="portfolio__works-block mix payed bootstrap">
 								<div class="portfolio__works-block-img">
 									<a href="#" class="portfolio__works-block-img__hover" alt="here is image">
 										<i class="fa fa-search" aria-hidden="true"></i>
@@ -271,7 +271,7 @@
 						</div>
 						<!-- 5 works end -->
 						<!-- 6 works start --> 
-						<div class="col-sm-4">
+						<div class="col-sm-4 mix payed html-css>
 							<div class="portfolio__works-block">
 								<div class="portfolio__works-block-img">
 									<a href="#" class="portfolio__works-block-img__hover" alt="here is image">
@@ -380,6 +380,9 @@
 
 	<!--  Pagescroll2id -->
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+
+	<!--  mixitup -->
+	<script src="libs/mixitup-v3/dist/mixitup.min.js"></script>
 
 	<!--  User custom JS scripts -->
 	<script src="js/navigation.js"></script>

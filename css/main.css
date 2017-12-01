@@ -669,6 +669,13 @@ a.mouse_scroll:focus {
     margin-bottom: 17px;
   }
 }
+@media (min-width: 1500px) {
+  .portfolio--bg-gear {
+    background-image: url('../img/background/gear.png');
+    background-repeat: no-repeat;
+    background-position: left 55%;
+  }
+}
 .portfolio__title {
   text-align: center;
   margin: 0px;
@@ -841,21 +848,21 @@ a.mouse_scroll:focus {
     line-height: 19px;
   }
 }
-.filter {
+.filter-box {
   margin-bottom: 7px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .filter-box {
     margin-bottom: 42px;
   }
 }
-.filter__block {
+.filter-box__block {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 0px;
 }
-.filter__element {
+.filter-box__element {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -863,21 +870,21 @@ a.mouse_scroll:focus {
   display: block;
   font-size: 0px;
 }
-.filter__element:last-child {
+.filter-box__element:last-child {
   margin-right: 0px;
 }
 @media (min-width: 768px) {
-  .filter__element {
+  .filter-box__element {
     display: inline-block;
     margin-right: -3px;
   }
 }
 @media (min-width: 1200px) {
-  .filter__element {
+  .filter-box__element {
     margin-right: 14px;
   }
 }
-.filter__toggle {
+.filter-box__toggle {
   font-size: 16px;
   color: #CECECE;
   text-transform: uppercase;
@@ -889,30 +896,19 @@ a.mouse_scroll:focus {
   font-weight: 700;
   font-style: normal;
 }
-.filter__toggle:hover,
-.filter__toggle:focus {
+.filter-box__toggle:hover,
+.filter-box__toggle:focus {
   color: #000;
   border: solid 2px #0051C1;
   padding: 7px 20px;
 }
 @media (min-width: 768px) {
-  .filter__toggle {
+  .filter-box__toggle {
     display: inline-block;
     padding: 14px 31px;
   }
-  .filter__toggle:hover,
-  .filter__toggle:focus {
-    border: solid 2px #0051C1;
-    padding: 12px 29px;
-  }
-}
-.filter__toggle--active {
-  color: #000;
-  border: solid 2px #0051C1;
-  padding: 7px 20px;
-}
-@media (min-width: 768px) {
-  .filter__toggle--active {
+  .filter-box__toggle:hover,
+  .filter-box__toggle:focus {
     border: solid 2px #0051C1;
     padding: 12px 29px;
   }
