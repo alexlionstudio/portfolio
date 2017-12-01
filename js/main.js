@@ -10,19 +10,17 @@ $(document).ready(function(){
 
 	// fancybox
 	$(".fancybox").fancybox({
-	  // selector : '[data-fancybox="images"]',
-	  // loop     : true
-	  // prevEffect : 'none' ,
-	  // nextEffect : 'none' ,
-	  // closeBtn : true,
-	  arrows : true,
-	  nextClick : true,
-	  helpers : {
-	  	overlay: {
-	  		locked: false
-	  	}
-	  }
-	});
-
-
+			// Default - with fix from scroll to top
+			protect: true,
+			infobar : false,
+			toolbar : true,
+			buttons : [
+		        'slideShow',
+		        'fullScreen',
+		        'thumbs',
+		        //'download',
+		        'zoom',
+		        'close'
+		    ],
+    });
 });
