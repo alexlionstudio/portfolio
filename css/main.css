@@ -774,6 +774,9 @@ a.mouse_scroll:focus {
   color: #FFF;
   text-decoration: none;
 }
+.portfolio__works-block-img__hover:active {
+  top: 100%;
+}
 .portfolio__works-block-img__hover .fa {
   font-size: 64px;
   margin-bottom: 15px;
