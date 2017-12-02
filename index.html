@@ -362,17 +362,17 @@
 						<div class="form__block">
 							<h2 class="form__title">Связаться со мной</h2>
 							<div class="form__form">
-								<form action="">
-									<input class="form__input" type="text" placeholder="Имя">
-									<input class="form__input" type="text" placeholder="Email">
+								<form action="" id="contact-form" class="contact-form">
+									<input class="form__input" name="name"  type="text" placeholder="Имя">
+									<input class="form__input" name="email" type="text" placeholder="Email">
 									<div class="form__clearfix">
-										<input class="form__input form__input--half" type="text" placeholder="Scype">
-										<input class="form__input form__input--half" type="text" placeholder="телефон">
+										<input class="form__input form__input--half" name="scype" type="text" placeholder="Scype">
+										<input class="form__input form__input--half" name="phone" type="text" placeholder="телефон">
 									</div>
 									<div class="form__bg-pencil">
-										<textarea class="form__textarea" name="" placeholder="Ваше сообщение"></textarea>
+										<textarea class="form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
 									</div>
-									<input type="submit" class="form__submit">
+									<input type="submit" class="form__submit" name=""  value="Отправить">
 								</form>
 							</div> 
 						</div>
@@ -407,6 +407,9 @@
 
 	<!--  JQuery mouseWheel -->
 	<script src="libs/jquery-mousewheel/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!--  JQuery Validate -->
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
 
 	<!--  User custom JS scripts -->
 	<script src="js/navigation.js"></script>

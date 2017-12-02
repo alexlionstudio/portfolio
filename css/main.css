@@ -1354,6 +1354,32 @@ a.mouse_scroll:focus {
     line-height: 22px;
   }
 }
+label.error {
+  position: relative;
+  background-color: #c62828;
+  display: block;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 15px 7px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 1px;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+label.error:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 40px;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #c62828;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
 .footer {
   background: #003F6D;
   padding-top: 40px;

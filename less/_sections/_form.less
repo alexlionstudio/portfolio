@@ -151,3 +151,31 @@
 	@media (min-width: 1200px) {
 	}
 }
+label.error{
+	position: relative;
+	background-color: #c62828;
+	display: block;
+	border-radius: 4px;
+	color: #fff;
+	padding: 5px 15px 7px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	margin-top: 1px;
+	.noto-sans-bold;
+
+	@cornerSize: 15px;
+
+	&:after{
+		content: "" ;
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+		margin-left: -8px;
+		width: 0;
+		height: 0;
+		border-bottom: @cornerSize solid #c62828;
+		border-right: @cornerSize solid transparent;
+		border-left: @cornerSize solid transparent;
+	}
+
+}
