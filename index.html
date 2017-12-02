@@ -331,7 +331,7 @@
 									<!-- телефон -->
 									<div class="contacts__block-item ">
 										<h3>телефон</h3>
-										<p><a href="tel:+7 (904) 308-63-07">+7 (904) 308-63-07</a></p>
+										<p><a href="tel:+7(904)308-63-07">+7 (904) 308-63-07</a></p>
 									</div>
 									<!-- адрес -->
 									<div class="contacts__block-item contacts__block-item---none-underline">
@@ -362,7 +362,13 @@
 						<div class="form__block">
 							<h2 class="form__title">Связаться со мной</h2>
 							<div class="form__form">
-								<form action="" id="contact-form" class="contact-form">
+								<!-- action="php/mail.php" -->
+								<form id="contact-form" class="contact-form">
+									<!-- Hidden Required Fields START -->
+									<input type="hidden" name="project_name" value="Мой персональный сайт">
+									<input type="hidden" name="admin_email" value="ws.alexey@gmail.com">
+									<input type="hidden" name="form_subject" value="Сообщение с сайта">
+									<!-- Hidden Required Fields END -->
 									<input class="form__input" name="name"  type="text" placeholder="Имя">
 									<input class="form__input" name="email" type="text" placeholder="Email">
 									<div class="form__clearfix">
@@ -372,8 +378,11 @@
 									<div class="form__bg-pencil">
 										<textarea class="form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
 									</div>
-									<input type="submit" class="form__submit" name=""  value="Отправить">
+									<input type="submit" class="form__submit" name="submit"  value="Отправить">
 								</form>
+								<!-- Это поле для  AJAX start -->
+								<div id="answer"></div>
+								<!-- Это поле для  AJAX end -->
 							</div> 
 						</div>
 					</div>
