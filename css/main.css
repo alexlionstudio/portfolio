@@ -18,7 +18,7 @@
 .noto-sans-bold-italic {
   font-family: 'Noto Sans';
   font-weight: 700;
-  font-style: bold-italic;
+  font-style: italic;
 }
 .yellow {
   color: #FFE400;
@@ -742,8 +742,8 @@ a.mouse_scroll:focus {
 @media (min-width: 982px) {
   .portfolio__works-block-img {
     min-width: 280px;
-    min-height: 200px
-		overflow: hidden;
+    min-height: 200px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1200px) {
