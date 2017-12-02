@@ -1,53 +1,113 @@
-/*  ------- переменная --------- */
-.input{
-	margin-bottom: 10px;
-	font-size: 16px;
-}
-// ------------------------------
 .form__block{
 	color: #fff;
 }
 .form__title{
+	.noto-sans-bold;
 	font-size: 24px;
 	line-height: 19px;
 	margin-bottom: 25px;
+
 }
 .form__form{
 	font-size: 0px;
 }
-.form__name {
+.form__input{
 	width: 100%;
-	.input
+	color: #065A97;
+	border-radius: 8px;
+	border: none;
+	margin-bottom: 10px;
+	font-size: 16px;
+	padding: 10px 19px; 
+	border: solid 3px #fff;
+	.noto-sans-bold;
+	-webkit-transition: border-color 0.3s ease-in;
+			transition: border-color 0.3s ease-in;
+	&:active, &:focus, &:hover{
+		border-radius: 8px;
+		border: solid 3px rgb(162,209,244);
+	}
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		 color: #A1B6D0;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+		 color: #A1B6D0;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+		 color: #A1B6D0;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+		 color: #A1B6D0;
+	}
 }
-.form__email {
+.form__input--half{
+	float: left;
+	margin-right: 2%;
+	width: 49%;
+	&:last-child{
+		margin-right: 0%;
+	}
+}
+.form__textarea{
+	color: #065A97;
 	width: 100%;
-	.input
-}
-.form__scype {
-	width: 50%;
-	.input
-}
-.form__phone-number {
-	width: 50%;
-	.input
-}
-.form__massage{
-	width: 100%;
-	.input
+	// color: #A1B6D0;
+	border-radius: 8px;
+	border: none;
+	margin-bottom: 10px;
+	font-size: 16px;
+	padding: 10px 19px; 
+	border: solid 3px #fff;
+
+	.noto-sans-bold;
+	-webkit-transition: border-color 0.3s ease-in;
+			transition: border-color 0.3s ease-in;
+	&:active, &:focus, &:hover{
+		border-radius: 8px;
+		border: solid 3px rgb(162,209,244);
+	}
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		 color: #A1B6D0;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+		 color: #A1B6D0;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+		 color: #A1B6D0;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+		 color: #A1B6D0;
+	}
 }
 .form__submit{
-	height: 60px;
+	font-size: 18px;
+	padding: 18px 93px 20px;
+	.noto-sans-bold;
 	width: 100%;
 	color: #fff;
-	background: #055A97;
+	background-color: #065A97;
 	border: solid 4px #fff;
 	border-radius: 30px;
 	line-height: 18px; 
 	font-size: 18px;
+	-webkit-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+	&:focus, &:hover{
+		color: #065A97;
+		background: #fff;
+		background-color: #fff;
+	}
+	&:active{
+		color: #FFE400;
+		background-color: #065A97;
+		border: solid 4px #FFE400;
+	}
 	@media (min-width: 768px) {
-		width: 209px;	
+		padding: 16px 93px 18px;
+		width: auto;
+		font-size: 22px;
+		line-height: 22px;
 	}
 	@media (min-width: 1200px) {
-		width: 229px;	
 	}
 }
