@@ -1152,11 +1152,17 @@ a.mouse_scroll:focus {
 }
 .form__input--half {
   float: left;
+  display: block;
   margin-right: 2%;
   width: 49%;
 }
 .form__input--half:last-child {
   margin-right: 0%;
+}
+.form__clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .form__textarea {
   color: #065A97;
@@ -1306,14 +1312,5 @@ a.mouse_scroll:focus {
 .footer__text a:hover,
 .footer__text a:active {
   color: #FFE400;
-}
-.block {
-  background: #9AB3C6;
-}
-.block--green {
-  background: #00A650;
-}
-.block--orange {
-  background: #F27420;
 }
 /*# sourceMappingURL=main.css.map */

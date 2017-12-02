@@ -42,10 +42,18 @@
 }
 .form__input--half{
 	float: left;
+	display: block;
 	margin-right: 2%;
 	width: 49%;
 	&:last-child{
 		margin-right: 0%;
+	}
+}
+.form__clearfix{
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
 	}
 }
 .form__textarea{
