@@ -43,4 +43,9 @@ $(document).ready(function(){
     		message: "Пожалуйста, введите текст сообщения",
     	}
     });
+
+    // Защита от копирования изображений
+    $( "img" ).contextmenu(function(event) {
+    	event.preventDefault();
+	});
 });
