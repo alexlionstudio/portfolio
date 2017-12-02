@@ -179,9 +179,9 @@
 				<div class="row">
 					<div class="col-lg-offset-2 col-lg-8"> 
 						<div class="filter-box">
-							<ul class="filter filter-box__block">
-								<li class="filter-box__element"><span class="filter-box__toggle" data-filter="all">Все</span></li>
-								<li class="filter-box__element" ><span class="filter-box__toggle" data-filter=".html-css">HTML+CSS</span></li>
+							<ul class="filter-box__block controls filter">
+								<li class="filter-box__element" data-filter="all"><span class="filter-box__toggle">Все</span></li>
+								<li class="filter-box__element"  data-filter=".html-css"><span class="filter-box__toggle">HTML+CSS</span></li>
 								<li class="filter-box__element" data-filter=".bootstrap"><span class="filter-box__toggle">Bootstrap</span></li>
 								<li class="filter-box__element" data-filter=".tutorial"><span class="filter-box__toggle">Учебные</span></li>
 								<li class="filter-box__element" data-filter=".payed"><span class="filter-box__toggle">На заказ</span></li>
@@ -274,7 +274,7 @@
 						</div>
 						<!-- 5 works end -->
 						<!-- 6 works start --> 
-						<div class="col-sm-4 mix payed html-css>
+						<div class="col-sm-4 mix payed html-css">
 							<div class="portfolio__works-block">
 								<div class="portfolio__works-block-img">
 									<a href="usercontent/img/full/full_pixels.jpg" data-caption="Магазин аудиотехники" class="fancybox portfolio__works-block-img__hover" data-fancybox="images" alt="here is image" rel="group">
@@ -305,61 +305,68 @@
 							<!-- заголовок -->
 							<h2 class="contacts__block-title">Контакты</h2>
 							<!-- Описание -->
-							<div class="contacts__block-description block--green">
-								Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.
+							<div class="contacts__block-description">
+								<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
 							</div>
 							<!-- contacts__block-contact Start  -->
 							<div class="row contacts__block-contact">
 								<div class="col-lg-6">
 									<!-- Email -->
-									<div class="contacts__block-item block--green">
-										Email 
-										emelyan.kazakov@yandex.ru
+									<div class="contacts__block-item">
+										<h3>Email</h3> 
+										<p><a href="emelyan.kazakov@yandex.ru">emelyan.kazakov@yandex.ru</a></p>
 									</div>
 									<!-- SKYPE -->
-									<div class="contacts__block-item block--green">
-										SKYPE
-										emelyan.kazakov
+									<div class="contacts__block-item ">
+										<h3>SKYPE</h3>
+										<p><a href="scype:emelyan.kazakov?chat">emelyan.kazakov</a></p>
 									</div>
 								</div>
 								<!-- col-lg-6 End  -->
-								<div class="col-lg-6">
+								<div class="col-lg-6 contacts__block-item--left-padding">
 									<!-- телефон -->
-									<div class="contacts__block-item block--green">
-										телефон
-										+78 (070) 555-77-5X
+									<div class="contacts__block-item ">
+										<h3>телефон</h3>
+										<p><a href="tel:+78 (070) 555-77-55">+78 (070) 555-77-55</a></p>
 									</div>
 									<!-- адрес -->
-									<div class="contacts__block-item block--green">
-										адрес
-										Россия, Миасс
+									<div class="contacts__block-item contacts__block-item---none-underline">
+										<h3>адрес</h3>
+										<p>Россия, Миасс</p>
 									</div>
 								</div>
 								<!-- col-lg-6 End  -->
 							</div>
 							<!-- contacts__block-contact End  -->
-							<!-- социальные сети -->
-							<div class="contacts__block-social block--green">
-								социальные сети
-								                         
+							<!-- социальные сети start -->
+							<div class="contacts__block-item ">
+									<h3>социальные сети</h3>
+									<div class="contacts__block-social-icons">
+										<a href="#" class="fa fa-vk" aria-hidden="true"></a>
+										<a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+										<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+										<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+										<a href="#" class="fa fa-github" aria-hidden="true"></a>
+								</div>
 							</div>
+							<!-- социальные сети end -->
 						</div>
 					</div>
 					<!-- Блок контакты end -->
 					<!-- Блок форма start --> 
 					<div class="col-sm-6 col-lg-offset-1">
-						<div class="contact-form__block">
-							<h2 class="contact-form__title">Связаться со мной</h2>
-							<div class="contact-form__form block--green">
+						<div class="form__block">
+							<h2 class="form__title">Связаться со мной</h2>
+							<div class="form__form ">
 								<form action="">
-									<input class="contact-form__name" type="text" placeholder="Имя">
-									<input class="contact-form__email" type="text" placeholder="Email">
-									<input class="contact-form__scype" type="text" placeholder="Scype">
-									<input class="contact-form__phone-number" type="text" placeholder="телефон">
-									<textarea class="contact-form__massage" name="" id="" cols="30" rows="10">Ваше сообщение</textarea>
-									<input type="submit" class="contact-form__submit">
+									<input class="form__name" type="text" placeholder="Имя">
+									<input class="form__email" type="text" placeholder="Email">
+									<input class="form__scype" type="text" placeholder="Scype">
+									<input class="form__phone-number" type="text" placeholder="телефон">
+									<textarea class="form__massage" name="" id="" cols="30" rows="10">Ваше сообщение</textarea>
+									<input type="submit" class="form__submit">
 								</form>
-							</div>
+							</div> 
 						</div>
 					</div>
 					<!-- Блок форма end -->
@@ -379,7 +386,6 @@
 	</footer>
 
 	<!--  JQuery -->
-	<!-- <script src="libs/jquery-3.2.1.min.js"></script>  - удалить и файл-->
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 
 	<!--  Pagescroll2id -->

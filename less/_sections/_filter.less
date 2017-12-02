@@ -39,7 +39,7 @@
 	margin-bottom: 10px;
 	cursor: pointer;
 	.noto-sans-bold;
-	&:hover, &:focus{
+	&:hover, &:focus ,&:focus{
 		color: #000;
 		border: solid 2px #0051C1;
 		padding: 7px 20px;
@@ -47,9 +47,18 @@
 	@media (min-width: 768px){
 		display: inline-block;
 		padding: 14px 31px;
-		&:hover, &:focus{
+		&:hover, &:focus, &:focus{
 			border: solid 2px #0051C1;
 			padding: 12px 29px;
 		}
+	}
+}
+.mixitup-control-active span{
+	color: #000;
+	border: solid 2px #0051C1;
+	padding: 7px 20px;
+	@media (min-width: 768px){
+		display: inline-block;
+		padding: 12px 29px;
 	}
 }
