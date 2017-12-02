@@ -1,34 +1,40 @@
 $(document).ready(function(){
 
 	//  переменные отвечающие за выбор селекторов
-	var navToggleButton = $('.navigation__toggle');
-	var navToggleIcon = $('.navigation__toggle .fa');
+	var toggle = $("#navigation__button");
+	var navToggleButton = $('#navigation__button');
 	var navBlock = $('.navigation__list');
 	var navLink = $('.navigation__list a');
-
-	//  пременные со вложенными классами ( используются - для провреки, добавления и удаления)
-	var iconNav = 'fa-bars' ;
-	var iconClose = 'fa-times';
 	var openMobileNav = 'navigation__list--open';
+
+	// функция переключения
+	function navButtonToggle(){
+		if (toggle.hasClass("active")) {
+	      toggle.removeClass("active");
+	    }else{
+	      toggle.addClass("active");
+	    };
+	}
+	// функция переключения с устранением бага для Планшетов
+	// Отменить влияние на иконку в десткопных и планшетных экранах
+	function navButtonToggleClose(){
+		if (toggle.hasClass("active")) {
+	      toggle.removeClass("active");
+	    };
+	}
 
 	// Мобильная навигация (Открыть и Закрыть)
 	navToggleButton.on('click',function(e){
 		e.preventDefault();
 		navBlock.toggleClass('navigation__list--open');
-
-		if ( navToggleIcon.hasClass(iconNav) ) {
-			navToggleIcon.removeClass(iconNav);
-			navToggleIcon.addClass(iconClose);
-		}else{
-			navToggleIcon.removeClass(iconClose);
-			navToggleIcon.addClass(iconNav);
-		}
+		navButtonToggle();
 	})
+
+
 	/* При нажатие на ссылку из меню - автоматически закрывается меню */
 	navLink.on('click',function(){
 		navBlock.removeClass(openMobileNav);
-		navToggleIcon.removeClass(iconClose);
-		navToggleIcon.addClass(iconNav);
+		navButtonToggleClose();	
 	})
 
 	/* убераем баг - при измения окна свыше 768 открытое мобильное меню закрываем */
@@ -37,10 +43,8 @@ $(document).ready(function(){
 		if(w > 768){
 			 if (navBlock.hasClass(openMobileNav) ) {
 				navBlock.removeClass(openMobileNav);
-				navToggleIcon.removeClass(iconClose);
-				navToggleIcon.addClass(iconNav);
+				navButtonToggle();
 			}
 		}
 	})
-
 });

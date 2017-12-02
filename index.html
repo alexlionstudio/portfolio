@@ -28,10 +28,14 @@
 	<header id="top" class="header">
 		<div class="container">
 			<!-- Главная навигация на обложке -->
-			<nav class="navigation"> 
-				<div class="navigation__toggle">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</div>
+			<nav class="navigation">
+				<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					  <span>toggle menu</span>
+				</button>
+				<!-- <div class="navigation__toggle">  -->
+					<!-- navigation icon -->
+					<!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+				<!-- </div> -->
 				<ul class="navigation__list">
 					<li><a href="#resume">Резюме</a></li>
 					<li><a href="#portfolio">Портфолио</a></li>
@@ -43,7 +47,7 @@
 			<!-- Главный текст в обложке -->
 			<div  class="header__heading">
 				<h1 class="header__title" >Орехов Алекcей</h1>
-				<h2 class="header__subtitle" >HTML верстальщик сайтов</h2>
+				<h2 class="header__subtitle" >Веб дизайнер и HTML верстальщик сайтов</h2>
 			</div>
 			<!-- Главный паращая кнопка start-->
 			<div class="header__hoverButton">
@@ -70,7 +74,7 @@
 					<div class="hidden-xs col-sm-2 col-lg-3">
 						<div class="resume__avatar">
 							<!-- Аватарка в резюме -->
-							<img class="resume__avatar-img" src="img/photo-big.jpg" alt="image of user">
+							<img class="resume__avatar-img" src="usercontent/img/photo-small.jpg" alt="image of user">
 						</div>
 					</div>
 					<!-- Контент резюме  start -->
@@ -81,11 +85,11 @@
 							<!-- Основные сведения о специалисте -->
 							<div class="resume__main-inf">
 								<div class="resume__main-inf-person">
-									<p><strong>Емельян Казаков</strong></p>
-									<p>28 лет, Москва, Россия</p>
+									<p><strong>Орехов Алексей</strong></p>
+									<p>28 лет, Миасс, Россия</p>
 								</div>
 								<div class="resume__main-inf-story">
-									<p>Родился и вырос. Закончил три класса церковно-приходской IT школы. После чего «активно занимался самообразованием».</p>
+									<p>В данный момент учусь на WebCademy, закончил 2 учебных проекта и продолжаю работать над третим проектом. После чего планирую работать в сфере IT.</p>
 								</div>
 							</div>
 							<div class="row resume__story-block">
@@ -100,26 +104,26 @@
 										<ul class="resume__story-inf-column">
 											<li class="resume__story-inf-list">
 												<div class="resume__story-inf-time">
-													<p>декабрь — настоящее время</p>
+													<p>Декабрь — настоящее время</p>
 												</div>
 												<div class="resume__story-inf-description">
-													<p>Верстальщик в веб-студии “Веб-Старт”.</p>
+													<p>Верстка макета Портфолио.</p>
 												</div>
 											</li>
 											<li class="resume__story-inf-list">
 												<div class="resume__story-inf-time">
-													<p>октябрь 2015 — Декабрь 2016</p>
+													<p>Ноябрь 2017</p>
 												</div>
 												<div class="resume__story-inf-description">
-													<p>Фрилансер, веб-дизайнер.</p>
+													<p>Верстка макета Апполо.</p>
 												</div>
 											</li>
 											<li class="resume__story-inf-list">
 												<div class="resume__story-inf-time">
-													<p>Сентбярь 2014 — Октябрь 2015</p>
+													<p>Октябрь 2017 — ноябрь 2017</p>
 												</div>
 												<div class="resume__story-inf-description">
-													<p>«ООО Кибер Софт» — Системный администратор.</p>
+													<p>Старт в обучении и верстка макета Органика</p>
 												</div>
 											</li>
 										</ul>
@@ -138,18 +142,18 @@
 										<ul class="resume__story-inf-column">
 											<li class="resume__story-inf-list">
 												<div class="resume__story-inf-time">
-													<p>декабрь 2017</p>
+													<p>Октябрь 2017 - декабрь 2017</p>
 												</div>
 												<div class="resume__story-inf-description">
-													<p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
+													<p>Курс по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
 												</div>
 											</li>
 											<li class="resume__story-inf-list">
 												<div class="resume__story-inf-time">
-													<p>2008 — 2012</p>
+													<p>Октябрь 2017 - декабрь 2017</p>
 												</div>
 												<div class="resume__story-inf-description">
-													<p>Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</p>
+													<p>Курс по веб дизайну - OnlineWeb.School</p>
 												</div>
 											</li>
 										</ul>
@@ -306,7 +310,7 @@
 							<h2 class="contacts__block-title">Контакты</h2>
 							<!-- Описание -->
 							<div class="contacts__block-description">
-								<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
+								<p>Если вы ищите специалиста по веб дизайну и по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
 							</div>
 							<!-- contacts__block-contact Start  -->
 							<div class="row contacts__block-contact">
@@ -314,12 +318,12 @@
 									<!-- Email -->
 									<div class="contacts__block-item">
 										<h3>Email</h3> 
-										<p><a href="emelyan.kazakov@yandex.ru">emelyan.kazakov@yandex.ru</a></p>
+										<p><a href="ws.alexey@gmail.com">ws.alexey@gmail.com</a></p>
 									</div>
 									<!-- SKYPE -->
 									<div class="contacts__block-item ">
 										<h3>SKYPE</h3>
-										<p><a href="scype:emelyan.kazakov?chat">emelyan.kazakov</a></p>
+										<p><a href="scype:none.none?chat">none.none</a></p>
 									</div>
 								</div>
 								<!-- col-lg-6 End  -->
@@ -327,7 +331,7 @@
 									<!-- телефон -->
 									<div class="contacts__block-item ">
 										<h3>телефон</h3>
-										<p><a href="tel:+78 (070) 555-77-55">+78 (070) 555-77-55</a></p>
+										<p><a href="tel:+7 (904) 308-63-07">+7 (904) 308-63-07</a></p>
 									</div>
 									<!-- адрес -->
 									<div class="contacts__block-item contacts__block-item---none-underline">
