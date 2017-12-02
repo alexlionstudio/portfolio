@@ -952,6 +952,13 @@ a.mouse_scroll:focus {
     padding-bottom: 80px;
   }
 }
+@media (min-width: 1500px) {
+  .contacts--bg-cloud {
+    background-image: url('../img/background/cloud.png');
+    background-repeat: no-repeat;
+    background-position: right 55%;
+  }
+}
 .contacts__block {
   color: #fff;
   margin-bottom: 50px;
@@ -1160,6 +1167,7 @@ a.mouse_scroll:focus {
   font-size: 16px;
   padding: 10px 19px;
   border: solid 3px #fff;
+  height: 128px;
   font-family: 'Noto Sans';
   font-weight: 700;
   font-style: normal;
@@ -1187,6 +1195,37 @@ a.mouse_scroll:focus {
 .form__textarea:-moz-placeholder {
   /* Firefox 18- */
   color: #A1B6D0;
+}
+.form__bg-pencil {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .form__bg-pencil:after {
+    position: absolute;
+    left: 63%;
+    top: 73%;
+    display: block;
+    width: 203px;
+    height: 153px;
+    content: "";
+    background-image: url("../img/background/pencil.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@media (min-width: 1200px) {
+  .form__bg-pencil:after {
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    display: block;
+    width: 203px;
+    height: 153px;
+    content: "";
+    background-image: url("../img/background/pencil.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
 }
 .form__submit {
   padding: 18px 93px 20px;
@@ -1216,7 +1255,7 @@ a.mouse_scroll:focus {
 }
 @media (min-width: 768px) {
   .form__submit {
-    padding: 16px 93px 18px;
+    padding: 16px 50px 18px;
     width: auto;
     font-size: 22px;
     line-height: 22px;

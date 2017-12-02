@@ -58,6 +58,7 @@
 	font-size: 16px;
 	padding: 10px 19px; 
 	border: solid 3px #fff;
+	height: 128px;
 
 	.noto-sans-bold;
 	-webkit-transition: border-color 0.3s ease-in;
@@ -77,6 +78,37 @@
 	}
 	&:-moz-placeholder { /* Firefox 18- */
 		 color: #A1B6D0;
+	}
+}
+.form__bg-pencil{
+	position: relative;
+	@media (min-width: 768px) {
+		&:after{
+			position: absolute;
+			left: 63%;
+			top: 73%;
+			display: block;
+			width: 203px;
+			height: 153px;
+			content: "";
+			background-image: url("../img/background/pencil.png");
+			background-repeat: no-repeat;
+			background-position: left top;
+		}
+	}
+		@media (min-width: 1200px) {
+		&:after{
+			position: absolute;
+			left: 75%;
+			top: 75%;
+			display: block;
+			width: 203px;
+			height: 153px;
+			content: "";
+			background-image: url("../img/background/pencil.png");
+			background-repeat: no-repeat;
+			background-position: left top;
+		}
 	}
 }
 .form__submit{
@@ -103,7 +135,7 @@
 		border: solid 4px #FFE400;
 	}
 	@media (min-width: 768px) {
-		padding: 16px 93px 18px;
+		padding: 16px 50px 18px;
 		width: auto;
 		font-size: 22px;
 		line-height: 22px;
