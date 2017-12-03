@@ -9,7 +9,7 @@ $(document).ready(function(){
 	var mixer = mixitup('#porfolio-projects');
 
 	// fancybox
-	$(".fancybox").fancybox({
+    $(".fancybox").fancybox({
 			// Default - with fix from scroll to top
 			protect: true,
 			infobar : true,

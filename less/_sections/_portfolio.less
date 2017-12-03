@@ -127,22 +127,6 @@
 		}
 	}
 }
-
-/* 
-После закрытия fancyBox классу в состояние focus
-.portfolio__works-block-img__hover:
-добавляется position - 250
- */
-/* Устранения бага с fancyBox strart */
-.portfolio__works-block-img__hover:focus,{
-	display: none;
-}
-/* Устранения бага с fancyBox end */
-
-.portfolio__works-block-img:hover .portfolio__works-block-img__hover{
-	display: block;
-	top: 0%;
-}
 .portfolio__works-block-title{
 	margin-top: 0;
 	margin-bottom: 15px;
@@ -170,4 +154,24 @@
 	@media (min-width: 1200px){
 		line-height: 19px;
 	}
+}
+
+/* 
+После закрытия fancyBox классу в состояние focus
+.portfolio__works-block-img__hover:
+добавляется position - 250
+ */
+/* Устранения бага с fancyBox strart */
+.portfolio__works-block-img__hover:focus,{
+	display: none;
+}
+// устранения выделения вокруг заголовка
+.portfolio__works-block-title:focus,{
+	outline: none;
+}
+/* Устранения бага с fancyBox end */
+
+.portfolio__works-block-img:hover .portfolio__works-block-img__hover{
+	display: block;
+	top: 0%;
 }
