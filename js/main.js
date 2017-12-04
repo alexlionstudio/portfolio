@@ -78,4 +78,7 @@ $(document).ready(function(){
             return false; 
     }
 
+    // Equal height
+    $('.portfolio__works-block').equalHeights();
+
 });

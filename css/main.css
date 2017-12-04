@@ -52,6 +52,8 @@
   text-align: center;
   border-radius: 60px;
   background: #0052C2;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   box-shadow: 0px 3px 15px rgba(0, 81, 193, 0.5);
 }
 .button a:hover,
@@ -356,7 +358,7 @@ a.mouse_scroll:focus {
   position: relative;
   min-height: 390px;
   background-color: #1D6DAC;
-  background-image: url("../img/background/bg-10.jpg");
+  background-image: url("../img/background/bg-13.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1145,6 +1147,15 @@ a.mouse_scroll:focus {
 .contacts__block-item p a {
   text-decoration: none;
   color: #fff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.contacts__block-item p a:hover,
+.contacts__block-item p a:focus,
+.contacts__block-item p a:active {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFE400;
 }
 .contacts__block-item:last-child {
   margin-bottom: 0px;
@@ -1173,6 +1184,8 @@ a.mouse_scroll:focus {
   text-align: left;
   margin-right: 35px;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 @media (min-width: 768px) {
   .contacts__block-social-icons .fa {
@@ -1204,6 +1217,7 @@ a.mouse_scroll:focus {
   font-size: 0px;
 }
 .form__input {
+  outline: none;
   width: 100%;
   color: #065A97;
   border-radius: 8px;
@@ -1255,6 +1269,7 @@ a.mouse_scroll:focus {
   clear: both;
 }
 .form__textarea {
+  outline: none;
   color: #065A97;
   width: 100%;
   border-radius: 8px;
@@ -1324,6 +1339,7 @@ a.mouse_scroll:focus {
   }
 }
 .form__submit {
+  outline: none;
   padding: 18px 93px 20px;
   font-family: 'Noto Sans';
   font-weight: 700;
@@ -1439,9 +1455,15 @@ label.error:after {
 .footer__text a {
   text-decoration: underline;
   color: #5E92B9;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 .footer__text a:hover,
 .footer__text a:active {
   color: #FFE400;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
